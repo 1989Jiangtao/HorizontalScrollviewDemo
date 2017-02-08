@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_centerInParent="true"
+        android:id="@+id/itemImageView" />
+
+    <TextView
+        android:text="名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/itemNameTv" />
+
+    <TextView
+        android:text="坐标"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemNameTv"
+        android:layout_alignLeft="@+id/itemNameTv"
+        android:layout_alignStart="@+id/itemNameTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:id="@+id/itemLocationTv" />
+</RelativeLayout>
