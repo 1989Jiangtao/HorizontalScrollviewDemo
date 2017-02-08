@@ -55,7 +55,8 @@ public class MyListAdapter extends BaseAdapter {
                 itemNameTv.setText(itemBean.getPictureName());
                 itemLocationTv.setText(itemBean.getId());
                 // 添加到行布局中去
-                row.addView(itemView, new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT, 1.0f));
+                row.addView(itemView, new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.MATCH_PARENT, 1.0f));
             }
         }
         return view;  // 返回加载好了内容的行布局
